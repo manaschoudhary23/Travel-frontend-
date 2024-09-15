@@ -1,0 +1,536 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1rem 2rem;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 10; 
+    color: white;
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+    margin-left: 60px;
+    border-radius: 20%;
+}
+
+.head {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.head a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.head a:hover{
+    color: black;
+}
+
+.head li:hover{
+    text-decoration: underline;
+}
+
+#search {
+    padding: 6px 6px 6px 6px;
+    width: 340px;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-right: 80px;
+    font-size: 18px;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.background-clip {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.user-id{
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.user-id:hover{
+    text-decoration: underline;
+}
+
+.content {
+    padding: 2rem;
+    text-align: center;
+}
+
+.heading {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.packages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.info-packages {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(33.33% - 20px);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.place-img {
+    background: url('Images/IMG_5991.jpeg') no-repeat center center/cover;
+    height: 200px;
+    border-radius: 8px 8px 0 0;
+}
+
+.place-img1 {
+    background: url('Images/sikkim-images/816.jpg') repeat center center/cover;
+    height: 200px;
+    border-radius: 8px 8px 0 0;
+}
+
+.place-img2 {
+    background: url('Images/assam-images/assam-tea-plantations.jpg') repeat center center/cover;
+    height: 200px;
+    border-radius: 8px 8px 0 0;
+}
+
+.place-img3 {
+    background: url('Images/kerala.jpg') repeat center center/cover;
+    height: 200px;
+    border-radius: 8px 8px 0 0;
+}
+
+.place-img4 {
+    background: url('Images/uttar-pradesh.jpg') repeat center center/cover;
+    height: 200px;
+    border-radius: 8px 8px 0 0;
+}
+
+.place-img5 {
+    background: url('Images/gujarat.jpg') repeat center center/cover;
+    height: 200px;
+    border-radius: 8px 8px 0 0;
+}
+
+.package-details {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.location {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e74c3c;
+    margin: 10px 0;
+}
+
+.details {
+    font-size: 14px;
+    color: #777;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.place-img {
+    background-image: url(Images/IMG_5991.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px; 
+    animation: slider 12s infinite linear;
+    border: 1px solid black;
+    border-radius: 23px;
+}
+
+.place-img1{
+    background-image: url(Images/IMG_5991.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px; 
+    animation: slider 12s infinite linear;
+    border: 1px solid black;
+    border-radius: 23px;
+}
+
+.place-img2{
+    background-image: url(Images/IMG_5991.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px; 
+    animation: slider 12s infinite linear;
+    border: 1px solid black;
+    border-radius: 23px;
+}
+
+.place-img3{
+    background-image: url(Images/IMG_5991.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px; 
+    animation: slider 12s infinite linear;
+    border: 1px solid black;
+    border-radius: 23px;
+}
+
+.place-img4{
+    background-image: url(Images/IMG_5991.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px; 
+    animation: slider 12s infinite linear;
+    border: 1px solid black;
+    border-radius: 23px;
+}
+
+.place-img5{
+    background-image: url(Images/IMG_5991.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px; 
+    animation: slider 12s infinite linear;
+    border: 1px solid black;
+    border-radius: 23px;
+}
+
+@keyframes slider{
+    0%{background-image: url(Images/IMG_5991.jpeg);}
+    20%{background-image: url(Images/7-06-1499340415.jpg);}
+    40%{background-image: url(Images/62208357b184e_1646297943.jpg);}
+    60%{background-image: url(Images/Matho-Monastery.jpg);}
+    80%{background-image: url(Images/bannerdesk-1032d5e77e4c62a.avif);}
+}
+
+.place-img1{
+    background-image: url(Images/sikkim-images/816.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px; 
+    animation: slider1 12s infinite linear;
+}
+
+@keyframes slider1{
+    0%{background-image: url(Images/sikkim-images/816.jpg);}
+    20%{background-image: url(Images/sikkim-images/2024-03-20.jpg);}
+    40%{background-image: url(Images/sikkim-images/1542198470_shutterstock_661867435.avif);}
+    60%{background-image: url(Images/sikkim-images/IMG_20211218_132259.jpg);}
+    80%{background-image: url(Images/sikkim-images/IMG20220401120913.jpg);}
+}
+
+.place-img2{
+    background-image: url(Images/assam-images/assam-tea-plantations.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px; 
+    animation: slider2 12s infinite linear;
+}
+
+@keyframes slider2{
+    0%{background-image: url(Images/assam-images/assam-tea-plantations.jpg);}
+    20%{background-image: url(Images/assam-images/Dighalipukhuri-is-a-historic-man-made-pond-in-the-heart-of-Guwahati-Assam-1024x656.jpg);}
+    40%{background-image: url(Images/assam-images/indian-elephants-at-manas-national-park.webp);}
+    60%{background-image: url(Images/assam-images/manas-national-park-safari3.jpg);}
+    80%{background-image: url(Images/assam-images/Rang-Ghar.jpg);}
+}
+
+.place-img3{
+    background-image: url(Images/Kerala/untitled-design-2023-08-24t102229.527-min.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px; 
+    animation: slider3 12s infinite linear;
+}
+
+@keyframes slider3{
+    0%{background-image: url(Images/Kerala/untitled-design-2023-08-24t102229.527-min.png);}
+    20%{background-image: url(Images/Kerala/istockphoto-838927480-612x612.jpg);}
+    40%{background-image: url(Images/Kerala/Festivals-of-Kerala.jpg);}
+    60%{background-image: url(Images/Kerala/Feature-Most-Famous-Temples-in-Kerala.jpg);}
+    80%{background-image: url(Images/Kerala/houseboats_in_kottayam_2_438-56a3be175f9b58b7d0d39246.jpg);}
+}
+
+.place-img4{
+    background-image: url(Images/uttarpradesh/Ayodhya_Ram_Mandir_Inauguration_Day_Picture.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px; 
+    animation: slider4 12s infinite linear;
+}
+
+@keyframes slider4{
+    0%{background-image: url(Images/uttarpradesh/Ayodhya_Ram_Mandir_Inauguration_Day_Picture.jpg);}
+    20%{background-image: url(Images/uttarpradesh/india-varanasi-bengaluru-evening.jpg);}
+    40%{background-image: url(Images/uttarpradesh/Mathura-5.jpg);}
+    60%{background-image: url(Images/uttarpradesh/taj-mahal-4k-background-wallpaper-preview.jpg);}
+    80%{background-image: url(Images/uttarpradesh/water-city-varanasi-wallpaper-preview.jpg);}
+}
+
+.place-img5{
+    background-image: url(Images/gujarat-images/desktop-wallpaper-all-of-dwarkadhish-dwarkadhish-temple.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px; 
+    animation: slider5 12s infinite linear;
+}
+
+@keyframes slider5{
+    0%{background-image: url(Images/gujarat-images/desktop-wallpaper-all-of-dwarkadhish-dwarkadhish-temple.jpg);}
+    20%{background-image: url(Images/gujarat-images/360_F_325672092_G0Ln8fcAvSI3h5e4oS1JKmmPk1G3hO0n.jpg);}
+    40%{background-image: url(Images/gujarat-images/desktop-wallpaper-statue-of-unity-is-the-tallest-statue-in-india-and-biggest.jpg);}
+    60%{background-image: url(Images/gujarat-images/GettyImages-537000923-541774dbe2d44759815fdf0719b04685.jpg);}
+    80%{background-image: url(Images/gujarat-images/religious-wallpaper-preview.jpg);}
+}
+
+
+.package-details{
+    color: black;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.location{
+    color: black;
+    margin-left: 10px;
+}
+
+.price{
+    color:black;
+    margin-left: 10px;
+}
+
+.sponsors {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.sponsors h3 {
+    font-family:'Times New Roman';
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.sponsors img {
+    margin: 0 10px;
+    width: 70px; 
+    height: auto;
+}
+
+.sponsors .partner-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.divide {
+    border: none;
+    height: 2px; 
+    background-color: black; 
+    width: 50%; 
+    margin: 40px auto; 
+    border-radius: 5px; 
+}
+
+.subscribe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe h3{
+    color: black;
+    font-size: 30px;
+    font-family: 'Times New Roman';
+}
+
+.input-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 10px; 
+}
+
+#subscribe {
+    width: 340px;
+    font-size: 20px;
+    padding: 6px;
+    border: 2px solid black;
+    border-radius: 7px;
+}
+
+#subscribe-btn {
+    background-color: #9c9a9a;
+    font-size: 15px;
+    padding: 6px 12px;
+    border: 2px solid black;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#subscribe-btn:hover {
+    background-color: #6b6b6b;
+    color: white;
+    font-style: italic;
+}
+
+.about-us {
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px;
+    text-align: center; 
+}
+
+#about {
+    font-size: 2rem; 
+    font-weight: bold; 
+    color: #333; 
+    margin-bottom: 10px; 
+}
+
+#description-aboutus {
+    font-size: 1rem; 
+    color: #555; 
+    line-height: 1.6; 
+    margin-top: 10px; 
+}
+
+.social-media{
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    font-size: 30px;
+    cursor: pointer;
+    margin-bottom: 23px;
+}
+
+.services {
+    background-color: #f8f9fa;
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+.services .heading {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.box {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.box i {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+.box h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.box p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+    text-decoration: none;
+    color:black; 
+    background-color: rgb(156, 152, 152);
+    padding: auto;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black; 
+    font-size: 16px;
+    border-radius: 4px;
+    width: 100px;
+    padding: 3px 3px;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+}
+
+
